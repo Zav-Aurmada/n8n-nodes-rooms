@@ -1,0 +1,10 @@
+{
+  "note": "A real broker-call receipt returned by POST /x402/v1/broker/apitoll-crypto-defi-market-data on 2026-10-12 (seller answer body removed).",
+  "receipt": {
+    "alg": "Ed25519",
+    "kid": "rooms-x402-33ae8c485868",
+    "payload": "{\"call_id\":\"bc_YZAAKW4NtJhk\",\"currency\":\"USDC\",\"iat\":\"2026-10-12T23:48:31.482Z\",\"iss\":\"https://rooms.aurmada.com\",\"kind\":\"rooms.broker-call\",\"listing\":\"apitoll-crypto-defi-market-data\",\"method\":\"GET\",\"nonce\":\"fddd1116e3e07720\",\"price\":\"$0.002\",\"request_sha256\":\"afa103d95b19883ab57a9a5cf201e2cd1ddd2a5183fd2ea2347bc4b050105db0\",\"response_sha256\":\"cac7756045d31552a8ae6ab2b6749dc1ef55996412a5709574f4d25b7aef411f\",\"rooms_fee\":\"$0.001\",\"seller\":\"crypto.apitoll.cloud\",\"seller_path\":\"/v1/crypto/sentiment\",\"seller_price\":\"$0.001\",\"seller_tx\":\"0x92b94bce2cca6b2b6969df4137a998841257b4f932efea0130ef6b9e6d9dcff3\",\"sub\":\"wallet:0x0e413fd9c8e86ea5727b5438822c7019426d510e\",\"v\":1}",
+    "signature": "kxhOC8IzkmLf1Lkdqa0ED7jUkQoUFl4UEY3g7xpDXzSIe34P5bWpEfGo635CQl58QelGYiSyhv4_NX_cqe34AA",
+    "key_url": "https://rooms.aurmada.com/x402/v1/receipt-key"
+  }
+}

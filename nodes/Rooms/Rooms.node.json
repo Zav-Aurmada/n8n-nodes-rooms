@@ -1,0 +1,14 @@
+{
+	"node": "n8n-nodes-rooms.rooms",
+	"nodeVersion": "1.0",
+	"codexVersion": "1.0",
+	"categories": ["Development"],
+	"resources": {
+		"credentialDocumentation": [
+			{ "url": "https://rooms.aurmada.com/guides/x402-for-agents" }
+		],
+		"primaryDocumentation": [
+			{ "url": "https://rooms.aurmada.com/sdk" }
+		]
+	}
+}

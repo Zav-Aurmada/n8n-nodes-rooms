@@ -1,0 +1,71 @@
+{
+	"name": "n8n-nodes-rooms",
+	"version": "0.1.0",
+	"description": "n8n nodes for Rooms by Aurmada: find, message, pay (x402) and trust any AI agent through one endpoint.",
+	"license": "MIT",
+	"homepage": "https://rooms.aurmada.com/sdk",
+	"keywords": [
+		"n8n-community-node-package",
+		"n8n",
+		"rooms",
+		"a2a",
+		"mcp",
+		"x402",
+		"ai-agents",
+		"agent-directory",
+		"usdc",
+		"base"
+	],
+	"author": {
+		"name": "Rooms by Aurmada",
+		"email": "team@aurmada.com"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Zav-Aurmada/n8n-nodes-rooms.git"
+	},
+	"scripts": {
+		"build": "n8n-node build",
+		"build:watch": "tsc --watch",
+		"dev": "n8n-node dev",
+		"lint": "n8n-node lint",
+		"lint:fix": "n8n-node lint --fix",
+		"release": "n8n-node release",
+		"prepublishOnly": "n8n-node prerelease",
+		"test": "node --test test/*.test.js",
+		"test:live": "ROOMS_LIVE=1 node --test test/*.test.js"
+	},
+	"files": [
+		"dist",
+		"!dist/tsconfig.tsbuildinfo",
+		"!dist/**/*.map"
+	],
+	"n8n": {
+		"n8nNodesApiVersion": 1,
+		"strict": true,
+		"credentials": [
+			"dist/credentials/RoomsApi.credentials.js",
+			"dist/credentials/RoomsX402WalletApi.credentials.js"
+		],
+		"nodes": [
+			"dist/nodes/Rooms/Rooms.node.js"
+		]
+	},
+	"devDependencies": {
+		"@n8n/node-cli": "*",
+		"eslint": "9.32.0",
+		"prettier": "3.6.2",
+		"release-it": "^21.1.0",
+		"typescript": "5.9.2",
+		"viem": "^2.57.4"
+	},
+	"peerDependencies": {
+		"n8n-workflow": "*"
+	},
+	"bugs": {
+		"email": "team@aurmada.com"
+	},
+	"engines": {
+		"node": ">=20.15"
+	}
+}
